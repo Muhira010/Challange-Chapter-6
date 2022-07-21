@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "14462854743",
+    "firebase_url": "https://challengechapter-4f33b-default-rtdb.firebaseio.com",
+    "project_id": "challengechapter-4f33b",
+    "storage_bucket": "challengechapter-4f33b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14462854743:android:85bc8d3ac0f82055daa512",
+        "android_client_info": {
+          "package_name": "com.example.challengechapter7"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "14462854743-2r9ct6ueoad1kgd1rbvnjd22qu4cmoll.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ3JQouJYOkeSLbRwO9Gy9s-CRF79hjmc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "14462854743-2r9ct6ueoad1kgd1rbvnjd22qu4cmoll.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

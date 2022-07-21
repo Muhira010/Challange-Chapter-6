@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_controller"
+    app:startDestination="@id/mainMovieFragment">
+
+    <fragment
+        android:id="@+id/mainMovieFragment"
+        android:name="com.example.challengechapter7.ui.main.MainMovieFragment"
+        android:label="fragment_main_movie"
+        tools:layout="@layout/fragment_main_movie" >
+        <action
+            android:id="@+id/action_mainMovieFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_mainMovieFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.challengechapter7.ui.details.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <action
+            android:id="@+id/action_detailsFragment_to_mainMovieFragment"
+            app:destination="@id/mainMovieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.challengechapter7.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_mainMovieFragment"
+            app:destination="@id/mainMovieFragment" />
+    </fragment>
+</navigation>

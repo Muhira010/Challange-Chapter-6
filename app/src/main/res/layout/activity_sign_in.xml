@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.signin.SignInActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="200dp"
+        android:text="Hello Again!"
+        android:fontFamily="@font/nunitobold"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:textSize="17sp"
+        android:fontFamily="@font/nunitosemibold"
+        android:text="Welcome back, you've been missed!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/et_EmailSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="Email"
+        android:paddingLeft="25dp"
+        android:textColorHint="#999999"
+        android:textSize="16sp"
+        android:fontFamily="@font/nunitoregular"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/et_PassSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="Password"
+        android:paddingLeft="25dp"
+        android:textColorHint="#999999"
+        android:textSize="16sp"
+        android:fontFamily="@font/nunitoregular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_EmailSignIn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_SignIn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/bg_button"
+        android:text="Sign me in!"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:textSize="16sp"
+        android:layout_marginStart="85dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/nunitoregular"
+        app:layout_constraintBottom_toTopOf="@+id/btn_SignIn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="#00B9B3"
+        android:textSize="16sp"
+        android:fontFamily="@font/nunitosemibold"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textview3"
+        app:layout_constraintStart_toEndOf="@+id/textview3"
+        app:layout_constraintTop_toTopOf="@+id/textview3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
